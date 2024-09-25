@@ -9,13 +9,11 @@ function mayusc (nombre) {
         nombre.charAt(i) == "o" || 
         nombre.charAt(i) == "u") {
 
-            i = i.toUpperCase();
-            console.log(i);
+            console.log(nombre.charAt(i).toUpperCase());
 
         } else {
 
-            i = i.toLowerCase();
-            console.log(i);
+            console.log(nombre.charAt(i).toLowerCase());
 
         }
         
@@ -24,15 +22,63 @@ function mayusc (nombre) {
 
 }
 
-mayusc("Xavier")
+mayusc("xavier")
 
 //2
+const array1 = ["Uno", "Dos", "Tres", "Cuatro", "Cinco"];
 
+function masque5 (array1) {
+    
+    for (let i = 0; i < array1.length; i++) {
+        
+        let elem = array1[i];
+        
+        if (elem.length > 5) {
+
+            console.log(elem);
+
+        }
+
+    }
+
+}
+
+masque5 (array1);
 
 //3
+function comparar (n1, n2) {
 
+    if (n1 > n2) {
+
+        console.log("true");
+
+    } else if (n1 < n2) {
+
+        console.log("false");
+
+    }
+
+}
+
+comparar(6, 5)
+comparar(2, 4)
+
+//4
+function numPalabras (cadena) {
+
+    console.log(cadena.split(" ").length)
+
+}
+
+console.log("The Bridge es genial")
+numPalabras("The Bridge es genial")
 
 //5
+const array2 = [1, 2, 3, 4, 5];
 
+function masGrande (array2) {
+    console.log(array2)
 
-//6 
+}
+
+masGrande(array2)
